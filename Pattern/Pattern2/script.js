@@ -7,5 +7,5 @@ for(let i = 1;i<=4;i++) {
     row += num
        num++;
     }
-    console.log(row)
+    console.log(row);
 }
