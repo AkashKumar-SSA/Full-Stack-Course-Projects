@@ -7,14 +7,16 @@ const movies = [
     {movieName:'movie1',rating: 4, year: 2016},
     {movieName:'movie2',rating: 3, year: 2020},
     {movieName:'movie3',rating: 5, year: 2014},
-    {movieName:'movie4',rating: 1, year: 2015},
+    {movieName:'movie4',rating: 1, year: 2019},
     {movieName:'movie5',rating: 3, year: 2000}
 ];
 
-const newMovieList = {};
+let newMovieList = [];
 for (let i = 0; i < movies.length; i++) {
     if (movies[i].year >2015){
-        newMovieList.pu(movies[i]);
+        newMovieList.push(movies[i]);
     }
 }
 console.log(newMovieList);
+
+// movies in the descending order  of rating
