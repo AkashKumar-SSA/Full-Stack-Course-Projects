@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multi_file_handling</title>
+</head>
+<body>
+    <div><h3>It is the multi file support workspace</h3></div>
+
+</body>
+<script>
+    const test = {
+        sum: (a,b)=>{
+        console.log('Inside Test Object')
+        return a+b
+        }
+    }
+
+    function sum( a , b){
+        console.log('Inside Function')
+        return a + b
+    }
+
+    // const { sum : testsum} = test
+    
+    console.log(sum(5,6))
+    console.log(test.sum(34,76))
+
+
+</script>
+</html>
