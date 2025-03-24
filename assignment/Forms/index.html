@@ -6,20 +6,32 @@
     <title>Sign uP</title>
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
      <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            padding-top: 100px;
+        }
+        form{
+            border: 2px solid rgb(218, 218, 218);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 30px;
+            width: 300px;
+            border-radius: 20px;
+        }
         #signUp{
             font-size: 28px;
             font-weight: 500;
-        }
-        form{
             display: flex;
-            flex-direction: column;
-            gap: 15px;
-            margin: 100px;
-            width: 300px;
+            align-items: center;
+            justify-items: center;
         }
         input{
             font-size: 15px;
-            padding: 5px;
+            padding: 8px;
+            border: 1px solid rgb(196, 196, 196);
             border-radius: 2px;
         }
         select{
@@ -32,10 +44,17 @@
             flex-direction: row;
         }
         .termsConditions{
-            font-size: 10px;
+            font-size: p15x;
             font-weight: 100;
-            color: rgb(55, 55, 55);
+            color: rgb(0, 0, 0);
 
+        }
+        #submitButton{
+            background-color: #4CAF50;
+            padding: 10px;
+            color:white;
+            font-size: 20px;
+            border-radius: 5px;
         }
      </style>
 </head>
