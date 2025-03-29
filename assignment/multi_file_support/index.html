@@ -10,22 +10,15 @@
 
 </body>
 <script>
-    const test = {
-        sum: (a,b)=>{
-        console.log('Inside Test Object')
-        return a+b
-        }
-    }
-
-    function sum( a , b){
-        console.log('Inside Function')
-        return a + b
-    }
-
-    // const { sum : testsum} = test
     
-    console.log(sum(5,6))
-    console.log(test.sum(34,76))
+
+    import dataModule from './script1.js'
+    console.log(dataModule)
+    dataModule.addition()
+
+    import {fun1, fun2} from './script2.js'
+    console.log(fun1)
+    console.log(fun2)
 
 
 </script>
