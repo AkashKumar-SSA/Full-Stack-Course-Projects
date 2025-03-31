@@ -1,3 +1,11 @@
+:root {
+    --primary: #0099FF;
+    --secondry: #ADD8FF;
+    --defaultSecondry: #F1F1F1;
+    --defaultPrimary: #49454F;
+    --white: #ffffff;
+  }
+
 *{
     padding: 0px;
     margin: 0px;
@@ -13,32 +21,33 @@ body{
     display: flex;
     width: 100vw;
     height: 70px;
-    background-color: #9a9a9a;
+    background-color: var(--primary);
     justify-content: center;
     align-items: center;
     font-size: 32px;
     font-weight: 400;
+    color: var(--white);
 }
 #password_generator_container{
     display: flex;
     flex-direction: column;
     justify-content: start;
-    gap: 50px;
+    gap: 100px;
 }
 #generated_password{
     font-size: 30px;
     width: 650px;
     height: 88px;
-    color: 49454F;
+    color: var(--defaultPrimary);
     display: flex;
     justify-content: start;
     align-items: center;
     padding-left: 25px;
-    border: 2px solid #8e8e8e;
+    border: 3px solid var(--primary);
     border-radius: 10px;
-    background-color: #e4e4e4;
+    background-color: var(--defaultSecondry);
     overflow: hidden;
-    overflow-x: scroll;
+    overflow-x: default;
 }
 #password_generating_options{
     display: flex;
@@ -52,7 +61,7 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 100px;
+    gap: 10vw;
     padding: 10px;
 }
 #choice_set_one{
@@ -73,7 +82,7 @@ body{
     gap: 30px;
     font-size: 22px;
     font-weight: 500;
-    background-color: #F1F1F1;
+    background-color: var(--secondry);
     border-radius: 18px;
     padding: 10px;
     height: 112px;
@@ -114,7 +123,7 @@ body{
     align-items: center;
     width: 265px;
     height: 60px;
-    background-color: #909090;
+    background-color: var(--primary);
     border-radius: 10px;
     color: white;
     font-size: 24px;
@@ -131,7 +140,7 @@ body{
 #password_length_text{
     font-size: 26px;
     font-weight: 400;
-    color: #49454F;
+    color: var(--defaultPrimary);
 }
 #password_length_value{
     font-size: 30px;
@@ -141,7 +150,7 @@ body{
     justify-content: center;
     width: 150px;
     height: 70px;
-    border: 2px solid #49454F;
+    border: 3px solid var(--primary);
     border-radius: 10px;
 }
 #password_range_input{
@@ -156,7 +165,7 @@ body{
 #choice_set_two > div {
     display: flex;
     flex-direction: row;
-    background-color: #e3e3e3;
+    background-color: var(--secondry);
     border-radius: 10px;
     padding: 15px;
     gap: 25px;
@@ -167,5 +176,4 @@ body{
 .custom_checkbox{
     width: 30px;
     height: 30px;
-    border: 2px solid red;
 }
