@@ -1,7 +1,5 @@
-fetch('')
-//for get successful response
-.then((res)=>{
-    console.log('Pormis done',res.json().then((ress)=>{
-        console.log(ress)
-    }))
-})
+const a = fetch('https://fakestoreapi.com/products')
+            .then(res=>res.json())
+            .then(json=>console.log(json))
+
+console.log(a)
